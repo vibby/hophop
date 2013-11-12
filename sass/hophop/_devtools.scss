@@ -1,0 +1,41 @@
+
+.knacss-debug {
+  background: pink;
+  outline: 3px solid maroon;
+}
+
+#overlay {
+	display: none;
+	height: 4040px;
+	position: absolute;
+	opacity: .5;
+	width: 100%;
+	max-width: 100%;
+    z-index: 999;
+}
+
+#overlay:after{
+    content:"";
+    display:block;
+	background-image: url(../2013CSSOffDesign/cssoff-2013.png);
+	max-width: 1280px;
+	height: 4040px;
+	margin: 0 auto;
+	width: 100%;
+    z-index: 999;
+}
+
+#overlay.active {
+	display: block;
+}
+#overlay.active2 {
+	display: block;
+	opacity: 1;
+}
+
+.overlaymanager {
+	position:fixed;
+	right:0;
+	top:0;
+    z-index: 1000;
+}

@@ -1,11 +1,15 @@
 
 #page{
 	max-width: 1280px;
-	margin: .5em auto;
+	margin: 0 auto;
 }
 
 @media screen and (max-width: 1285px) {
 	#page{
-		margin: .5em;
+		margin: 0 .5em;
 	}
+}
+
+#skiplink {
+	@extend .visuallyhidden;
 }
