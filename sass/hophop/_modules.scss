@@ -7,7 +7,7 @@
     position: absolute;
 	background: #cdc9dd;
 	content: "";
-	height: 80%;
+	height: 145%;
 	width: 100%;
 	left: -54.5%;;
 	z-index: -11;
@@ -15,18 +15,66 @@
 .mod-header>.mod-box:before {
 	display: block;
     position: absolute;
-	background: #d9d5e5; /* Old browsers */
-	background: -moz-linear-gradient(top, #d9d5e5 0%, #cfcbde 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d9d5e5), color-stop(100%,#cfcbde)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #d9d5e5 0%,#cfcbde 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #d9d5e5 0%,#cfcbde 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #d9d5e5 0%,#cfcbde 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #d9d5e5 0%,#cfcbde 100%); /* W3C */
+	background: $bgcolor1; /* Old browsers */
+	background: -moz-linear-gradient(top, $bgcolor1 0%, $bgcolor2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$bgcolor1), color-stop(100%,$bgcolor2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, $bgcolor1 0%,$bgcolor2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, $bgcolor1 0%,$bgcolor2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, $bgcolor1 0%,$bgcolor2 100%); /* IE10+ */
+	background: linear-gradient(to bottom, $bgcolor1 0%,$bgcolor2 100%); /* W3C */
 	content: "";
-	top: 20%;
-	bottom: 20%;
-	width: 100%;
-	left: -54.5%;;
+	bottom: 8%;
+	width: 200%;
 	z-index: -10;
 }
 
+.mod-header>h1{
+	color: #FFF;
+    font-size: 18em;
+    line-height: 0.75;
+    margin-left: 0.4em;
+    padding-top: 0.18em;
+    max-width: 500px;
+    margin-bottom: 0.44em;
+}
+.mod-header .subtitle{
+	float: right;
+	color: $lightgray;
+}
+
+
+.mod-box{
+	text-align: center;
+	color: $mediumgray;
+}
+.mod-box>h1{
+	font-family: $merriweather-font-stack;
+	margin-bottom: -.5em;
+}
+.mod-box-illustration{
+	width: 357px;
+	height: 312px;
+	margin:0 auto;
+	position: relative;
+}
+.mod-box-illustration>img{
+	position: absolute;
+	 box-shadow: 0 21px 9px -15px #7A6D64, 23px -23px 8px -20px #D9D5E5;
+}
+.mod-box-illustration>img{
+	left: 0;
+	top: 0;
+}
+.mod-box-illustration>img+img{
+	left: inherit;
+	top: inherit;
+	right: 0;
+	bottom: 0;
+}
+.mod-box-main{
+	max-width: 375px;
+	margin-left: 10.5em;
+}
+.mod-box-main>p{
+	font-size: 1.15em;
+}

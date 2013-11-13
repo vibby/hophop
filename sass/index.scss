@@ -25,6 +25,12 @@ $base-font-size: 14 				!default; /* 4 */
 $regular-font-stack: "Lato", sans-serif;
 $monospace-font-stack: "Consolas", "DejaVu Sans Mono", "Courier", monospace; /* 5 */
 
+$lightgray : #b0aeb8;
+$mediumgray : #5F5D66;
+
+$bgcolor1 : #d9d5e5;
+$bgcolor2 : #cfcbde;
+
 @import "helpers/mixins";          // Sass only
 @import "helpers/reset";           // Home made reset
 // @import "helpers/spacing-helpers"; // A couple of spacing-related helper classes
@@ -43,7 +49,7 @@ $monospace-font-stack: "Consolas", "DejaVu Sans Mono", "Courier", monospace; /* 
 @import "partials/iefix";          // Some IE fixes
 // @import "partials/print";          // Print stylesheet
 
+@import "hophop/typography";       // Typography baseline and vertical rythm
 @import "hophop/layout";           // General layout
 @import "hophop/modules";          // Modules
-@import "hophop/typography";       // Typography baseline and vertical rythm
 @import "hophop/devtools";         // For dev and debug purpose

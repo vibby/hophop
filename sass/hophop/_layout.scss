@@ -13,3 +13,16 @@
 #skiplink {
 	@extend .visuallyhidden;
 }
+
+
+.mod-box{
+	width: 44%;
+	float: left;
+    margin-top: -10.1em;    
+}
+.mod-header>.mod-box:before {
+	top: 15.6em;;
+}
+.mod-header>.mod-box:before {
+    left: -96.6%;
+}
