@@ -1,0 +1,27 @@
+/* ----------------------------- */
+/* ==typography                  */
+/* ----------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+$oswald-font-stack: "Oswald", sans-serif;
+$lato-font-stack: "Lato", sans-serif;
+$merriweather-font-stack: "Merriweather", sans-serif;
+$lora-font-stack: "Lora", sans-serif;
+
+/**
+ * 1. Orientation iOS font-size fix
+ */
+html {
+  font-family: $regular-font-stack;
+  line-height: 1.5;
+  color: #000;
+
+  @media (orientation: landscape) and (max-device-width: 768px) {
+    -webkit-text-size-adjust: 100%; /* 1 */
+  }
+}
+

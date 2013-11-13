@@ -65,12 +65,18 @@
 <body id="top">
 
   <!-- Must be REMOVED -->
-  <button class="overlaymanager" onclick="switch(document.getElementById('overlay').className) {
-    case '': var cl='active'; break;
-    case 'active': var cl='active2'; break;
-    case 'active2': var cl=''; break;
-  }
-  document.getElementById('overlay').className = cl">Maquette</button>
+  <div class="devtools">
+    <button  onclick="switch(document.getElementById('overlay').className) {
+      case '': var cl='active'; break;
+      case 'active': var cl='active2'; break;
+      case 'active2': var cl=''; break;
+    }
+    document.getElementById('overlay').className = cl">Maquette</button>
+    <p class="oswald">oswald</p>
+    <p class="lato">lato</p>
+    <p class="merriweather">merriweather</p>
+    <p class="lora">lora</p>
+  </div>
   <div id="overlay"></div>
   <!-- Must be REMOVED, the end -->
 
@@ -87,7 +93,7 @@
       </ul>
     </nav><!-- / #skiplink -->
 
-    <header>
+    <header class="mod-header">
       <h1>CSSOFF</h1>
       <p>Volume 3−<time title="2013-09">september 2013</time></p>
       <article id="introduction" class="mod-box">
@@ -166,7 +172,7 @@
           <p>The revenge of the fallen</p>
         </header>
         <p>A noisy, underplotted, and overlong special effects extravaganza that lacks a human touch</p>
-      </article>        
+      </article>
       <article class="mod-rating">
         <header>
           <h1>Rotten tomato rating</h1>

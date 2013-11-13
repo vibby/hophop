@@ -1,12 +1,12 @@
 /**
  * www.KNACSS.com V2.9 @author: Raphael Goetter, Alsacreations
  * Licence CC-BY http://creativecommons.org/licenses/by/3.0/fr/
- * 
+ *
  * Sass version maintained by @HugoGiraudel
  * https://github.com/HugoGiraudel/KNACSS-Sass
  */
 
-/** 
+/**
  * 1. Enable support for old browsers (IE8-, Firefox 3.6)
  * 2. Enable print stylesheet
  * 3. Gutter value for grid layouts
@@ -22,13 +22,13 @@ $gutter: 20px						!default; /* 3 */
 
 $base-font-size: 14 				!default; /* 4 */
 
-$regular-font-stack: "Helvetica", "Arial", sans-serif; /* 5 */
+$regular-font-stack: "Lato", sans-serif;
 $monospace-font-stack: "Consolas", "DejaVu Sans Mono", "Courier", monospace; /* 5 */
 
 @import "helpers/mixins";          // Sass only
 @import "helpers/reset";           // Home made reset
 // @import "helpers/spacing-helpers"; // A couple of spacing-related helper classes
-@import "helpers/layout-helpers";  // A couple of layout-related helper classes and Sass placeholder 
+@import "helpers/layout-helpers";  // A couple of layout-related helper classes and Sass placeholder
 // @import "helpers/block-helpers";   // A couple of block-related helper classes
 
 // @import "modules/grids";           // Small grid system
@@ -43,6 +43,7 @@ $monospace-font-stack: "Consolas", "DejaVu Sans Mono", "Courier", monospace; /* 
 @import "partials/iefix";          // Some IE fixes
 // @import "partials/print";          // Print stylesheet
 
-@import "hophop/devtools";         // For dev and debug purpose
 @import "hophop/layout";           // General layout
 @import "hophop/modules";          // Modules
+@import "hophop/typography";       // Typography baseline and vertical rythm
+@import "hophop/devtools";         // For dev and debug purpose
