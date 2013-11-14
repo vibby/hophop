@@ -44,14 +44,26 @@
 }
 
 .oswald{
-  font-family: $oswald-font-stack;
-}
-.lato{
-  font-family: $lato-font-stack;
+	@include oswald
 }
 .merriweather{
-  font-family: $merriweather-font-stack;
+	@include merriweather
+}
+.merriweather-light{
+	@include merriweather-light
+}
+.merriweather-heavy{
+	@include merriweather-heavy
+}
+.lato{
+	@include lato
+}
+.lato-hairline{
+	@include lato-hairline
 }
 .lora{
-  font-family: $lora-font-stack;
+	@include lora
+}
+.lora-bold{
+	@include lora-bold
 }

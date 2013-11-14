@@ -23,23 +23,30 @@
 	background: -ms-linear-gradient(top, $bgcolor1 0%,$bgcolor2 100%); /* IE10+ */
 	background: linear-gradient(to bottom, $bgcolor1 0%,$bgcolor2 100%); /* W3C */
 	content: "";
-	bottom: 8%;
-	width: 200%;
+	bottom: 6.6%;
+	width: 400%;
 	z-index: -10;
+	top: 14.57em;
+	right: 0;
 }
 
 .mod-header{
 }
+.mod-header>h1:first-line{
+    letter-spacing: 0.038em;;	
+}
 .mod-header>h1{
 	z-index: -5;
 	color: #FFF;
-    font-size: 18em;
-    line-height: 0.75;
+    font-size: 17.45em;
     margin-left: 0.4em;
-    padding-top: 0.18em;
+    padding: 0.125em 0 0 0.035em;
     max-width: 500px;
     margin-bottom: 0.44em;
-}
+    @include lato-hairline;
+	letter-spacing: -0.04em;
+ 	line-height: 0.805;
+ }
 .mod-header .subtitle{
 	float: right;
 	color: $lightgray;
@@ -49,18 +56,34 @@
 .mod-box{
 	text-align: center;
 	color: $mediumgray;
+	max-width: 440px;
+	float: left;
+    margin-top: -8.9em;
+ 	margin-left: 142px;
 }
 .mod-box>h1{
 	font-family: $merriweather-font-stack;
-	margin-bottom: -.5em;
+	margin: 0.25em 0 -.5em;
+    @include lora-bold;
+    font-size: 2.25em;
+}
+.mod-box>p{
+    font-size: 1.25em;
+    margin-top: 1.1em;
+    letter-spacing: -0.038em;
+	line-height: 1.36em;   
+	max-width: 360px;
+	margin-left: 40px; 
+	margin-right: 40px; 
 }
 .mod-box-illustration{
 	position: relative;
-	box-shadow: 0 21px 9px -15px #7A6D64, 23px -23px 8px -20px #D9D5E5;
 	display: inline-block;
+	padding-right: 11px;
 }
 .mod-box-illustration>img{
 	position: inherit;
+	box-shadow: 0 21px 9px -15px #7A6D64, 23px -23px 8px -20px #D9D5E5;
 }
 .mod-box>.mod-box-illustration:before{
 	box-shadow: 0 21px 9px -15px #7A6D64, 23px -23px 8px -20px #D9D5E5;
