@@ -87,7 +87,7 @@
   <div id="page">
 
     <!-- Liens d'évitement -->
-    <nav id="skiplink">
+    <nav id="skiplink" role="navigation">
       <ul>
         <li><a class="skip" href="#feature">Go to feature content</a></li>
         <li><a class="skip" href="#bullets">Go the bullets</a></li>
@@ -97,161 +97,161 @@
       </ul>
     </nav><!-- / #skiplink -->
 
-    <header class="mod-header">
+    <header class="mod-header" role="banner">
       <h1 class="site-title">CSS OFF</h1>
       <p class="subtitle">Volume 3−<time datetime="2013-09">september 2013</time></p>
       <article id="introduction" class="mod-box">
-        <figure class="mod-box-figure">
-          <img src="img/box.jpg" alt="The 50th anniversary’s replica of the first Barbie doll in its box" />
-        </figure>
+        <img src="img/box.jpg" alt="The 50th anniversary’s replica of the first Barbie doll in its box" />
         <h2 class="mod-box-title">Box Model</h2>
         <p class="mod-box-content">The Barbie doll was invented in 1959 by Ruth Handler (co-founder of Mattel), whose own daughter was called Barbara. Barbie was introduced to the world at the American Toy Fair in New York City. Barbie’s job was teenage fashion doll. The full name of the first doll was Barbie Millicent Roberts, from Willows, Wisconsin.</p>
       </article>
     </header>
 
-    <article id="feature" class="mod-feature">
+    <section id="feature" class="mod-feature" aria-labelledby="feature-title">
       <header>
         <p>Feature<p>
-        <h2>Positoning relatives</h2>
+        <h2 id="feature-title">Positoning relatives</h2>
       </header>
       <img src="img/fading-away.jpg" alt="Fading away, the first photomontage by Henry Peach Robinson" />
       <p>In 1958, English pictorial photographer Henry Peach Robinson created the world’s fisrt photomontage by combining five different negatives to make one complete print of a young girl at her deathbed. &ldquo;Fading Away&rdquo;&mdash;Robinson’s first and most famous composite photo&mdash; decipts a young girl dying of consumption and was controversial when it was exhibed, with many believing it was not a suitable subject for photography.</p>
-    </article>
-
-
-    <aside class="mod-afloat">
-      <h2>Staying float</h2>
-      <p>Lobsterman John Alridge fell into the shark invested water of Lomg Island while while his crewmates were asleep. He was kept afloat for more than 12 hours by his rubber boots, which he used as flotation devices. The coast guard rescued him 43 miles south of Montauk where he fell off his vessel.</p>
-    </aside>
-
-    <section id="bullets" class="mod-bullets">
-      <header>
-        <h2>List style : Bullets.</h2>
-        <p>A round-up of popular ammunition<p>
-      </header>
-      <ul>
-        <li>
-          <figure>
-            <img src="img/bullet1.jpg" alt=".223 Remingtown bullet" />
-            <img src="img/bullet1.jpg" alt=".223 Remingtown bullet" />
-            <img src="img/bullet1-socket.jpg" alt=".223 Remingtown socket" />
-            <figcaption>.223 Remingtown 69gr BHTP</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/bullet2.jpg" alt=".308 Winchester bullet" />
-            <img src="img/bullet2.jpg" alt=".308 Winchester bullet" />
-            <img src="img/bullet2-socket.jpg" alt=".308 Winchester socket" />
-            <figcaption>.308 Winchester 168gr BHTP</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/bullet3.jpg" alt="7.62×39mm Russian bullet" />
-            <img src="img/bullet3.jpg" alt="7.62×39mm Russian bullet" />
-            <img src="img/bullet3-socket.jpg" alt="7.62×39mm Russian socket" />
-            <figcaption>7.62×39mm Russian 154gr JSP</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/bullet4.jpg" alt="7.62 Thumper bullet RN" />
-            <img src="img/bullet4.jpg" alt="7.62 Thumper bullet RN" />
-            <img src="img/bullet4-socket.jpg" alt="7.62 Thumper RN socket" />
-            <figcaption>7.62 Thumper 220gr RN</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img src="img/bullet5.jpg" alt="7.62 Thumper bullet BHTB" />
-            <img src="img/bullet5.jpg" alt="7.62 Thumper bullet BHTB" />
-            <img src="img/bullet5-socket.jpg" alt="7.62 Thumper socket BHTB" />
-            <figcaption>7.62 Thumper 240gr BHTP</figcaption>
-          </figure>
-        </li>
-      </ul>
     </section>
 
-    <article id="famous" class="mod-famous">
-      <h2>Display (famous) blocks</h2>
-      <p>Abbey road is a thoroughfare located in the borough of Camden and the city of Westminster in London, running roughly northwest to southeast through <abbr title="Saint John">St. John</abbr>’s Wood, near Lord’s Cricket Ground. It is a part of the B157. This road is best known as for the the Abbey Road Studios and the 1969 album, Abbey Road, by The Beatles.
-      <footer>
-        <a href="http://goo.gl/h44dc9">Photo: goo.gl/h44dc9</a>
-      </footer>
-    </article>
 
-    <aside class="mod-bottomaside">
-      <article class="mod-bluray">
+    <main role="main">
+
+      <aside class="mod-afloat">
+        <h2>Staying float</h2>
+        <p>Lobsterman John Alridge fell into the shark invested water of Lomg Island while while his crewmates were asleep. He was kept afloat for more than 12 hours by his rubber boots, which he used as flotation devices. The coast guard rescued him 43 miles south of Montauk where he fell off his vessel.</p>
+      </aside>
+
+      <article id="bullets" class="mod-bullets" role="article">
         <header>
-          <h2>Transformers</h2>
-          <p>The revenge of the fallen</p>
+          <h2>List style : Bullets.</h2>
+          <p>A round-up of popular ammunition<p>
         </header>
-        <p>A noisy, underplotted, and overlong special effects extravaganza that lacks a human touch</p>
+        <ul>
+          <li>
+            <figure role="group" itemscope itemtype="http://schema.org/ImageObject">
+              <img src="img/bullet1.jpg" alt=".223 Remingtown bullet" itemprop="contentURL" aria-describedby="wp-caption--bullet-1"/>
+              <figcaption id="wp-caption--bullet-1" itemprop="description">.223 Remingtown 69gr BHTP</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure role="group" itemscope itemtype="http://schema.org/ImageObject">
+              <img src="img/bullet2.jpg" alt=".308 Winchester bullet" itemprop="contentURL" aria-describedby="wp-caption--bullet-1"/>
+              <figcaption id="wp-caption--bullet-2" itemprop="description">.308 Winchester 168gr BHTP</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure role="group" itemscope itemtype="http://schema.org/ImageObject">
+              <img src="img/bullet3.jpg" alt="7.62×39mm Russian bullet" itemprop="contentURL" aria-describedby="wp-caption--bullet-1"/>
+              <figcaption id="wp-caption--bullet-3" itemprop="description">7.62×39mm Russian 154gr JSP</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure role="group" itemscope itemtype="http://schema.org/ImageObject">
+              <img src="img/bullet4.jpg" alt="7.62 Thumper bullet RN" itemprop="contentURL" aria-describedby="wp-caption--bullet-1"/>
+              <figcaption id="wp-caption--bullet-4" itemprop="description">7.62 Thumper 220gr RN</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure role="group" itemscope itemtype="http://schema.org/ImageObject">
+              <img src="img/bullet5.jpg" alt="7.62 Thumper bullet BHTB" itemprop="contentURL" aria-describedby="wp-caption--bullet-1"/>
+              <figcaption id="wp-caption--bullet-5" itemprop="description">7.62 Thumper 240gr BHTP</figcaption>
+            </figure>
+          </li>
+        </ul>
       </article>
-      <article class="mod-rating">
-        <header>
-          <h2>Rotten tomato rating</h2>
-          <p>20%</p>
-          <span class="progress-bar-20"></span>
-        </header>
-      </article>
-      <article class="mod-event vevent">
-        <p>World première</p>
-        <p class="location">Den Haag Theatre</p>
-        <h1 class="summary">The neederlands</h2>
-        <time datetime="2011-06-23">June 23, 2011</time>
-      </article>
-    </aside>
 
-    <section id="mews" class="mod-bottom">
-      <header>
-        <h2>Border bottom line</h2>
-        <p>Awful immigration laws from around the world.</p>
-      </header>
-      <article>
-        <em>Italy</em> penalizes illegal immigrants with a fine of €5,000-10,000 and allows immigration official to detain them for up to 6 months
-      </article>
-      <article>
-        <em>Switzerland</em> immediatly deports all convicted criminals from other countries and potentially even their family members.
-      </article>
-      <article>
-        <em>Australia</em> detains all non-citizens without a valid visa
-      </article>
-      <article>
-        <em>Japan</em> is allowed to pay $3,000 to each employed Latin American immigrant of Japanese descent and $2,000 to each that unemployed worker’s family members to return to their country of origin.
-      </article>
-      <article>
-        The <em>United Arab Emirates</em> prohibits foreigners from engaging in any sort of labor union-like activity, resulting in harsh living conditions, 80-hour work weeks, back-breaking manual labor, and below-minimum-wage pay.
-      </article>
-    </section>
+      <section id="famous" class="mod-famous" aria-labelledby="famous-title">
+        <h2 id="famous-title">Display (famous) blocks</h2>
+        <article role="article">
+          <img src="img/abbeyroad.jpg" alt="The Beatles' Abbey Road’s cover"/>
+          <p>Abbey road is a thoroughfare located in the borough of Camden and the city of Westminster in London, running roughly northwest to southeast through <abbr title="Saint John">St. John</abbr>’s Wood, near Lord’s Cricket Ground. It is a part of the B157. This road is best known as for the the Abbey Road Studios and the 1969 album, Abbey Road, by The Beatles.</p>
+        </article>
+        <footer>
+          <a href="http://goo.gl/h44dc9" title="Link to the picture">Photo: goo.gl/h44dc9</a>
+        </footer>
+      </section>
 
-    <section id="quotes" class="mod-quotes">
-      <h2>Overflow</h2>
-      <blockquote>
-        On the night of <time datetime="1975-08-08">Aug 8, 1975</time>, a line of people frantically piled sandbags atop Henan Province’s <em>Banqio Dam</em> while being battered by the worst storm ever recorded in the region. They were in a race with the rapidly rising Ru River to save the dam and the millions of of people that lay sleeping downstream.<br />
-        It was a race they were about to loose.
-      </blockquote>
-      <blockquote>
-        Just after 1:00 am, the sky cleared and stars emerged from behind the storm clouds. There was an eerie calm as someone yelled, &ldquo;The water level is going down! The flood is retreating!&rdquo;
-      </blockquote>
-      <blockquote>
-        There was little chance to enjoy that calm. One survivor recalled that a few seconds later it &ldquo;sounded like the sky was collapsing and the earth was cracking&rdquo; the equivalent of <abbr title="280000">280,000</abbr> Olympic-sized swimming pools burst through the crumbling dam, taking with it entire towns and as many as <abbr title="171000">171,000</abbr> lives.
-      </blockquote>
-    </section>
+      <section id="news" class="mod-bottom" aria-labelledby="news-title">
+        <aside class="mod-bottomaside">
+          <article class="mod-bluray" itemscope itemtype="http://schema.org/Movie">
+            <img src="img/transformers.png" itemprop="image"/>
+            <header>
+              <h2 itemprop="name">Transformers</h2>
+              <p itemprop="alternativeHeadline">The revenge of the fallen</p>
+            </header>
+            <p itemprop="description">A noisy, underplotted, and overlong special effects extravaganza that lacks a human touch</p>
+          </article>
+          <article class="mod-rating" itemscope itemtype="http://schema.org/AggregateRating">
+            <header>
+              <h2 itemprop="itemReviewed">Rotten tomato rating</h2>
+              <p itemprop="ratingValue">20%</p>
+              <span class="progress-bar-20"></span>
+            </header>
+          </article>
+          <article class="mod-event vevent" itemscope itemtype="http://schema.org/Event">
+            <p itemprop="name">World première</p>
+            <p class="location" itemprop="location">Den Haag Theatre</p>
+            <h1 class="summary" itemprop="location">The neederlands</h2>
+            <time datetime="2011-06-23" itemprop="startDate">June 23, 2011</time>
+          </article>
+        </aside>
 
-    <footer>
+        <article role="article">
+          <header>
+            <h2 id="news-title">Border bottom line</h2>
+            <h3>Awful immigration laws from around the world.</h3>
+          </header>
+          <ul>
+            <li>
+              <em>Italy</em> penalizes illegal immigrants with a fine of €5,000-10,000 and allows immigration official to detain them for up to 6 months
+            </li>
+            <li>
+              <em>Switzerland</em> immediatly deports all convicted criminals from other countries and potentially even their family members.
+            </li>
+            <li>
+              <em>Australia</em> detains all non-citizens without a valid visa
+            </li>
+            <li>
+              <em>Japan</em> is allowed to pay $3,000 to each employed Latin American immigrant of Japanese descent and $2,000 to each that unemployed worker’s family members to return to their country of origin.
+            </li>
+            <li>
+              The <em>United Arab Emirates</em> prohibits foreigners from engaging in any sort of labor union-like activity, resulting in harsh living conditions, 80-hour work weeks, back-breaking manual labor, and below-minimum-wage pay.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="quotes" class="mod-quotes" aria-labelledby="quotes-title">
+        <h2 id="quotes-title">Overflow</h2>
+        <blockquote>
+          On the night of <time datetime="1975-08-08">Aug 8, 1975</time>, a line of people frantically piled sandbags atop Henan Province’s <em>Banqio Dam</em> while being battered by the worst storm ever recorded in the region. They were in a race with the rapidly rising Ru River to save the dam and the millions of of people that lay sleeping downstream.<br />
+          It was a race they were about to loose.
+        </blockquote>
+        <blockquote>
+          Just after 1:00 am, the sky cleared and stars emerged from behind the storm clouds. There was an eerie calm as someone yelled, &ldquo;The water level is going down! The flood is retreating!&rdquo;
+        </blockquote>
+        <blockquote>
+          There was little chance to enjoy that calm. One survivor recalled that a few seconds later it &ldquo;sounded like the sky was collapsing and the earth was cracking&rdquo; the equivalent of <abbr title="280000">280,000</abbr> Olympic-sized swimming pools burst through the crumbling dam, taking with it entire towns and as many as <abbr title="171000">171,000</abbr> lives.
+        </blockquote>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
       <h2><em>2013, CSSOff 2013</em>, Volume 3</h2>
 
-      <div id="hcard-Route-Gregory" class="vcard">
+      <div id="hcard-Route-Gregory" class="vcard" itemscope itemprop="http://schema.org/PostalAddress">
         <div class="adr">
-          <a class="url fn" href="http://http://fr.wikipedia.org/wiki/Gr%C3%A9gory_Baug%C3%A9">Route Gregory</a>,
-          <div class="street-address">Building 31</div>
-          <span class="postal-code">01630</span>
-          <span class="locality">Prévessin-Moëns</span>,
-          <span class="country-name">France</span>
+
+          <div class="street-address" itemprop="streetAddress">
+            <a class="url fn" href="http://fr.wikipedia.org/wiki/Gr%C3%A9gory_Baug%C3%A9" itemprop="url">Route Gregory</a>, Building 31</div>
+          <span class="postal-code" itemprop="postalCode">01630</span>
+          <span class="locality" itemprop="addressLocality">Prévessin-Moëns</span>,
+          <span class="country-name" itemprop="addressCountry">France</span>
         </div>
-        <div class="tel">+41 22 767 61 11</div>
+        <div class="tel" itemprop="telephone">+41 22 767 61 11</div>
       </div>
 
     </footer>
