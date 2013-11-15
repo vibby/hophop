@@ -32,7 +32,7 @@
 .mod-header{
 }
 .mod-header>.site-title:first-line{
-    letter-spacing: 0.038em;;	
+    letter-spacing: 0.038em;
 }
 .mod-header>.site-title{
 	z-index: -5;
@@ -49,12 +49,13 @@
 .mod-header>.subtitle{
 	float: right;
 	color: $lightgray;
-	@include merriweather;
+    @include lora;
     font-size: 0.8em;
-    margin-right: 12.5%;
+    margin-right: 12.44%;
+    transform: scale(1, 0.95);
     margin-top: -36.7%;
     text-transform: uppercase;
-	letter-spacing: 0.11em;
+	letter-spacing: 0.14em;
 }
 
 
@@ -75,10 +76,10 @@
     font-size: 1.25em;
     margin-top: 1.1em;
     letter-spacing: -0.038em;
-	line-height: 1.36em;   
+	line-height: 1.36em;
 	max-width: 360px;
-	margin-left: 40px; 
-	margin-right: 40px; 
+	margin-left: 40px;
+	margin-right: 40px;
 }
 .mod-box-figure{
 	position: relative;
