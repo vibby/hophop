@@ -9,22 +9,22 @@
 	width: 10000em;
 }
 .mod-header:before {
-	background: $bgcolor2;
+	background: $color-bg2;
 	top: 0;
 	bottom: -14em;
 	right: 54.5%;
-	z-index: -11;
+	z-index: -35;
 }
 .mod-header>.mod-box:before {
-	background: $bgcolor1; /* Old browsers */
-	background: -moz-linear-gradient(top, $bgcolor1 0%, $bgcolor2 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$bgcolor1), color-stop(100%,$bgcolor2)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, $bgcolor1 0%,$bgcolor2 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, $bgcolor1 0%,$bgcolor2 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, $bgcolor1 0%,$bgcolor2 100%); /* IE10+ */
-	background: linear-gradient(to bottom, $bgcolor1 0%,$bgcolor2 100%); /* W3C */
+	background: $color-bg1; /* Old browsers */
+	background: -moz-linear-gradient(top, $color-bg1 0%, $color-bg2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color-bg1), color-stop(100%,$color-bg2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, $color-bg1 0%,$color-bg2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, $color-bg1 0%,$color-bg2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, $color-bg1 0%,$color-bg2 100%); /* IE10+ */
+	background: linear-gradient(to bottom, $color-bg1 0%,$color-bg2 100%); /* W3C */
 	bottom: 6.6%;
-	z-index: -10;
+	z-index: -30;
 	top: 15.4em;
 	right: 0;
 }
@@ -41,14 +41,14 @@
     margin-left: 0.4em;
     padding: 0.125em 0 0 0.035em;
     max-width: 500px;
-    margin-bottom: 0.44em;
+	margin-bottom: 0.165em;
     @include lato-hairline;
 	letter-spacing: -0.04em;
  	line-height: 0.805;
  }
 .mod-header>.subtitle{
 	float: right;
-	color: $lightgray;
+	color: $color-gray-light;
     @include lora;
     font-size: 0.8em;
     margin-right: 12.44%;
@@ -61,10 +61,10 @@
 
 .mod-box{
 	text-align: center;
-	color: $mediumgray;
+	color: $color-gray-medium;
 	max-width: 440px;
 	float: left;
-    margin-top: -9.7em;
+    margin-top: -4.9em;
  	margin-left: 142px;
 }
 .mod-box-title{
@@ -99,4 +99,37 @@
 	content: "";
     left: -151px;
     top: -16px;
+}
+
+
+.mod-feature{
+	position: relative;
+	margin-left: 45.5%;
+	padding-left: 2em;
+}
+.mod-feature-subtitle{
+    @include lora-bold;
+    color: $color-gray-lighter;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+.mod-feature-title{
+    @include oswald;
+    font-size: 4.55em;
+    letter-spacing: -0.027em;
+    line-height: 1.1em;
+    color: $color-sand;
+    margin: 0;
+    text-transform: uppercase;
+}
+.mod-feature img{
+	transform: rotate(-3.8deg);
+	max-width: 794px;
+    margin-left: -7.4em;
+	margin-top: -36.4em;
+	z-index: -30;
+}
+
+main {
+	clear: both;
 }
