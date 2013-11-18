@@ -53,7 +53,7 @@ $breakpoints: large, small, tiny;
   position: absolute;
 }
 
-/** 
+/**
  * Prevent long strings to break out of their container
  */
 .wrap {
@@ -66,7 +66,7 @@ $breakpoints: large, small, tiny;
 }
 
 /**
- * Skip links 
+ * Skip links
  */
 .skip-links {
   position: absolute;
@@ -87,33 +87,33 @@ $breakpoints: large, small, tiny;
 
 /**
  * Float layout
- * module, contains floats (.item is the same) 
+ * module, contains floats (.item is the same)
  */
-.mod, 
-.item { 
+.mod,
+.item {
   overflow: hidden;
 }
 
-/** 
- * Blocks that needs to be placed under floats 
+/**
+ * Blocks that needs to be placed under floats
  */
-.clear, 
-.line, 
+.clear,
+.line,
 .row {
   clear: both;
 }
 
 /**
- * Blocks that must contain floats 
+ * Blocks that must contain floats
  */
-.clearfix, 
-.line, 
+.clearfix,
+.line,
 .mod {
   @extend .clearfix;
 }
 
 /**
- * Table layout 
+ * Table layout
  */
 .row {
   display: table;
@@ -144,7 +144,7 @@ $breakpoints: large, small, tiny;
 img.left { margin-right: 1em; }
 img.right { margin-left: 1em; }
 
-img.left, 
+img.left,
 img.right { margin-bottom: 5px; }
 
 .center    { margin-left: auto; margin-right: auto; }
