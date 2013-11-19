@@ -1,9 +1,10 @@
+/* mod-header */
 .mod-header, .mod-header>.mod-box {
-    position: relative;
+	position: relative;
 }
 .mod-header:before, .mod-header>.mod-box:before {
 	display: block;
-    position: absolute;
+	position: absolute;
 	content: "";
 	width: 10000em;
 }
@@ -31,53 +32,52 @@
 .mod-header{
 }
 .mod-header>.site-title:first-line{
-    letter-spacing: 0.038em;
+	letter-spacing: 0.038em;
 }
 .mod-header>.site-title{
 	z-index: -5;
 	color: #FFF;
-    font-size: 17.45em;
-    margin-left: 0.4em;
-    padding: 0.125em 0 0 0.035em;
-    max-width: 500px;
+	font-size: 17.45em;
+	margin-left: 0.4em;
+	padding: 0.125em 0 0 0.035em;
+	max-width: 500px;
 	margin-bottom: 0.165em;
-    @include lato-hairline;
+	@include lato-hairline;
 	letter-spacing: -0.04em;
- 	line-height: 0.805;
- 	z-index: 10;
+	line-height: 0.805;
+	z-index: 10;
 	position: relative;
- }
+}
 .mod-header>.subtitle{
 	float: right;
 	color: $color-gray-light;
-    @include lora;
-    font-size: 0.8em;
-    margin-right: 12.44%;
-    transform: scale(1, 0.95);
-    margin-top: -30.7%;
-    text-transform: uppercase;
+	@include lora;
+	font-size: 0.8em;
+	margin-right: 12.44%;
+	margin-top: -30.7%;
+	text-transform: uppercase;
 	letter-spacing: 0.14em;
 }
 
-
+/* mod-box */
 .mod-box{
 	text-align: center;
 	color: $color-gray-medium;
 	max-width: 440px;
 	float: left;
-    margin-top: -4.9em;
-    margin-bottom: 3em;
- 	margin-left: 142px;
+	margin-top: -4.9em;
+	margin-bottom: 3em;
+	margin-left: 142px;
 }
 .mod-box-title{
 	margin: 0.29em 0 -.5em;
-    @include lora-bold;
-    font-size: 2.25em;
+	@include lora-bold;
+	font-size: 2.25em;
 }
 .mod-box-content{
-    font-size: 1.25em;
-    margin-top: 1.1em;
-    letter-spacing: -0.037em;
+	font-size: 1.25em;
+	margin-top: 1.1em;
+	letter-spacing: -0.037em;
 	line-height: 1.36em;
 	max-width: 360px;
 	margin-left: 40px;
@@ -100,37 +100,37 @@
 	width: 193px;
 	height: 289px;
 	content: "";
-    left: -151px;
-    top: -16px;
+	left: -151px;
+	top: -16px;
 }
 
-
+/* mod-feature */
 .mod-feature{
 	position: relative;
 	margin-left: 45.5%;
 	padding-left: 2em;
 }
 .mod-feature>header>*{
- 	z-index: 40;
+	z-index: 40;
 	position: relative;
 }
 .mod-feature>*{
-    max-width: 506px;
+	max-width: 506px;
 }
 .mod-feature-subtitle{
-    @include lora-bold;
-    color: $color-gray-lighter;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
+	@include lora-bold;
+	color: $color-gray-lighter;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
 }
 .mod-feature-title{
-    @include oswald;
-    font-size: 4.55em;
-    letter-spacing: -0.033em;
-    line-height: 1.1em;
-    color: $color-sand;
-    margin: 0;
-    text-transform: uppercase;
+	@include oswald;
+	font-size: 4.55em;
+	letter-spacing: -0.033em;
+	line-height: 1.1em;
+	color: $color-sand;
+	margin: 0;
+	text-transform: uppercase;
 }
 .mod-feature>header{
 	position: relative;
@@ -149,90 +149,118 @@
 	z-index: -5;
 }
 .mod-feature-content{
-    @include merriweather;
-    font-size: 1.505em;
-    letter-spacing: 0em;
-    line-height: 1.37em;
-    margin-top: -0.37em;
-    max-width: 506px;
+	@include merriweather;
+	font-size: 1.505em;
+	letter-spacing: 0em;
+	line-height: 1.37em;
+	margin-top: -0.37em;
+	max-width: 506px;
 }
 .mod-feature>img{
 	transform: rotate(-3.8deg);
 	-webkit-transform: rotate(-3.8deg);
 	-ms-transform: rotate(-3.8deg);
 	max-width: 794px;
-    margin-left: -7.4em;
+	margin-left: -7.4em;
 	margin-top: -36.5em;
 	z-index: 5;
 }
 
-main {
-	clear: both;
-}
-
-
-/* Mod_Bullets */
+/* mod-afloat */
 .mod-afloat {
-  @include oswald;
-  float: left;
-  text-align: right;
-  overflow: hidden;
-  padding: 0 2%;
-  width: 16.5%;
+	@include oswald;
+	float: left;
+	text-align: right;
+	overflow: hidden;
+	padding: 0 2%;
+	width: 16.5%;
 
-  h2 {
-    color: #24795a;
-    font-size: 1.3125rem;
-    font-weight: 300;
-  }
+	h2 {
+		color: #24795a;
+		font-size: 1.3125rem;
+		font-weight: 300;
+	}
 }
 
+/* mod-bullets */
 .mod-bullets {
-  width: 83%;
+	width: 83%;
 
-  header {
-    overflow: hidden;
-    border: 1px solid #e5e5e5;
-    border-width: 1px 0;
-    padding: 1rem 0;
+	header {
+		overflow: hidden;
+		border: 1px solid #e5e5e5;
+		border-width: 1px 0;
+		padding: 1rem 0;
 
-    > * {
-      text-transform: uppercase;
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0;
-    }
-  }
+		> * {
+			text-transform: uppercase;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0;
+		}
+	}
 
 
-  h2 {
-    @include oswald;
-    font-size: 1rem;
-    font-weight: 300;
-    color: #a97d35;
-    width: 40%;
-    text-align: right;
-  }
+	h2 {
+		@include oswald;
+		font-size: 1rem;
+		font-weight: 300;
+		color: #a97d35;
+		width: 40%;
+		text-align: right;
+	}
 
-  p {
-    @include lato;
-    font-weight: 400;
-    font-size: .75rem;
-    width: 58%;
-    color: #e0c167;
-  }
+	p {
+		@include lato;
+		font-weight: 400;
+		font-size: .75rem;
+		width: 58%;
+		color: #e0c167;
+	}
 
-  li {
-    width: 20%;
-    padding: 0 2%;
-    display: table-cell;
-    font-size: 2rem;
-    color: #e0e0e0;
-    @include oswald;
-    text-align: justify;
-  }
+	li {
+		width: 20%;
+		padding: 0 2%;
+		display: table-cell;
+		font-size: 2rem;
+		color: #e0e0e0;
+		@include oswald;
+		text-align: justify;
+	}
 
-  li + li {
-    border-left: 1px solid;
-  }
+	li + li {
+		border-left: 1px solid;
+	}
 }
+
+/* mod-famous */
+.mod-famous {
+	background: $color-taupe;
+	@include merriweather;
+	color: #fff;
+}
+.mod-famous-title {
+	@include oswald;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2.9em;
+	padding: .4em 0;
+	margin: 0;
+}
+.mod-famous>article>* {
+	color: #fff;
+	padding: .6em 1em 0;
+	font-size: 1.65em;
+	margin: 0;
+}
+.mod-famous>article>img {
+	padding: 0;
+}
+.mod-famous>footer {
+	color: $color-gray-lighter;
+	padding: 0 1em .6em;
+	font-size: 1.65em;
+}
+
+
+
