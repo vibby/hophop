@@ -13,14 +13,14 @@
  * 4. Base font size: must be unitless
  * 5. Font stacks
  */
-$legacy-support-for-ie: true 		!default; /* 1 */
-$legacy-support-for-mozilla: true 	!default; /* 1 */
+$legacy-support-for-ie: true     !default; /* 1 */
+$legacy-support-for-mozilla: true   !default; /* 1 */
 
-$print-stylesheet: false 			!default; /* 2 */
+$print-stylesheet: false       !default; /* 2 */
 
-$gutter: 20px						!default; /* 3 */
+$gutter: 20px            !default; /* 3 */
 
-$base-font-size: 14 				!default; /* 4 */
+$base-font-size: 14         !default; /* 4 */
 
 $regular-font-stack: "Lato", sans-serif;
 $monospace-font-stack: "Consolas", "DejaVu Sans Mono", "Courier", monospace; /* 5 */
@@ -33,7 +33,7 @@ $color-bg1 : #d9d5e5;
 $color-bg2 : #cfcbde;
 
 $color-sand : #FDCD84;
-$color-taupe : #71625A;
+$color-taupe : #524741;
 
 @import "helpers/mixins";          // Sass only
 @import "helpers/reset";           // Home made reset
