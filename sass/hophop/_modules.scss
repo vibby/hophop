@@ -268,39 +268,43 @@ $float: 'float.png';
 
 /* mod-famous */
 .mod-famous {
-	background: $color-taupe;
 	@include merriweather;
 	color: #fff;
 	clear: both;
+	background: $color-taupe;
 
 	footer a {
-		color: $color-gray-lighter;
+		color: #fff;
+		opacity: .5;
 		display: inline-block;
 		padding: 1em;
 		font-size: 1.1em;
 		text-decoration: none;
+		padding: 1.2em 2.5% 1.65em;
 
 		&:hover {
 			text-decoration: underline;
-			color: #fff;
+			opacity: 1;
 		}
 	}
 
 	p {
-		padding: .6em 1em 0;
-		font-size: 1.55em;
-		margin: 0;
-	}
+    font-size: 1.7em;
+    letter-spacing: -0.04em;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0.73em 2.5% 0;
+ 	}
 }
 .mod-famous-title {
 	@include oswald;
 	text-transform: uppercase;
 	font-size: 3.1em;
 	margin: 0;
-	padding: .4em 0;
-	background: $color-taupe;
+	padding: 0.5em 0.35em 0.35em 0;
+	background: rgba(0,0,0,.3333);
 	text-indent: .6em;
-	letter-spacing: -2px;
+	letter-spacing: -0.055em;
 	word-spacing: 4px;
 	text-align: center;
 	padding-right: 0.4em;
@@ -308,6 +312,10 @@ $float: 'float.png';
 
 /* mod-bottom-aside */
 .mod-bottom-aside {
+	h2 {
+		margin: 0;
+	}
+
 	@include oswald;
 	text-transform: uppercase;
 	float: right;
@@ -331,40 +339,29 @@ $float: 'float.png';
 		border-top: none;
 	}
 	&>article>* {
-		margin: 0 11px;
+		margin: 0 12px;
 	}
 	.mod-bottom-aside-content {
 		@include lora;
 		text-transform: none;
-	}
+    font-size: 0.97em;
+    letter-spacing: -0.045em;
+    margin-bottom: 24px;
+ 	}
 	.progress-bar {
 		clear: both;
-		display: block;
-		width: 100%;
-		background: $color-frank-blue-lighter;
-		height: 7px;
-	}
-	.progress-bar:before {
-		content: "";
-		display: block;
-		height: inherit;
-		background: #fff;
-	}
-	.progress-bar-20:before {
-		width: 20%;
-	}
-	.progress-bar-0:before {
-		width: 0;
+		width: 95.5%;
+		margin: 7px 0 16px;
 	}
 	&:hover>.mod-event{
 		-webkit-transition: -webkit-transform .5s;
 		transition: transform .5s;
-		-webkit-transform: rotate(-3.8deg);
-		-webkit-transform-origin: 100% 0;
-		-ms-transform: rotate(-3.8deg);
-		-ms-transform-origin: 100% 0;
-		transform: rotate(-3.8deg);
-		transform-origin: 100% 0;
+		-webkit-transform: rotate(-2.5deg) translateY(3px);
+		-webkit-transform-origin: 70% 5%;
+		-ms-transform: rotate(-2.5deg) translateY(3px);
+		-ms-transform-origin: 70% 5%;
+		transform: rotate(-2.5deg) translateY(3px);
+		transform-origin: 70% 5%;
 	}
 }
 
@@ -372,21 +369,23 @@ $float: 'float.png';
 	header>* {
 		font-size: 1.32em;
 		margin-top: 0;
+		margin-bottom: 11px;
 	}
 	h2 {
-		font-size: 1.7em;
-		margin-bottom: -.02em;
+		font-size: 1.8em;
+		margin-bottom: -.03em;
 	}
 	img {
 		width: 298px;
 		max-width: 298px;
-	    margin: -66px 0 -106px -33px;
+    margin: -66px 0 -84px -33px;
 	}
 }
 
 .mod-rating {
+	padding-bottom: .45em;
 	h2 {
-		color: $color-frank-blue-light;
+		opacity: .35;
 		float: left;
 		width: 50%;
 		font-size: 1.88em;
@@ -403,18 +402,23 @@ $float: 'float.png';
 }
 
 .mod-event {
+	padding-top: 1em;
+	padding-bottom: 2em;
+	position: relative;
+
 	p:first-child:before {
 		content: "";
-		border: $color-frank-blue-lighter solid;
-		border-width: 0 2.2em;
+		border: #FFF solid;
+		border-width: 0 2.8em;
 		width: 100%;
-		height: 1em;
+		height: .9em;
 		display: block;
 		top: 5px;
 		position: absolute;
+		opacity: .6;
 	}
 	*:nth-child(2n+1) {
-		color: $color-frank-blue-light;
+		opacity: .35;
 	}
 	p:first-child {
 		position: relative;
@@ -423,22 +427,46 @@ $float: 'float.png';
 	}
 	.location {
 		font-size: 1.65em;
+		margin-top: -0.17em;
 	}
 	.name {
-		font-size: 1.75em;
-		font-weight: 400;
+		font-size: 1.72em;
+		font-weight: normal;
+		margin-top: -0.24em;
 	}
 	time {
+		display: block;
 		font-size: 2.4em;
+		line-height: 0.85em;
 	}
 	&:after {
 		margin: 0 auto;
 		content: "";
-		height:16px;
-		width:32px;
-		border-radius: 16px 16px 0 0;
+		height:14px;
+		width:28px;
+		border-radius: 14px 14px 0 0;
 		background: #fff;
-		display: block;
+		position: absolute;
+		bottom: -2px;
+		left: 44%;
 	}
+}
+
+.progress-bar {
+	display: block;
+	background: rgba(255,255,255,.2); 
+	height: 7px;
+}
+.progress-bar:before {
+	content: "";
+	display: block;
+	height: inherit;
+	background: #fff;
+}
+.progress-bar-20:before {
+	width: 20%;
+}
+.progress-bar-0:before {
+	width: 0;
 }
 
