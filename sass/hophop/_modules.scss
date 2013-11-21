@@ -544,11 +544,8 @@ $float: 'float.png';
     margin-top: 0.15em;
     text-align: right;
     font-size: 0.8em;
-    &>* {
-			opacity: .4;
-    }
+		opacity: .4;
     .name {
-			opacity: .6;
 			@include merriweather-heavy;
     }
  	}
