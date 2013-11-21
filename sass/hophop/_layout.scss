@@ -22,7 +22,7 @@
 	@extend .visuallyhidden;
 }
 
-main {
+main, #page>footer {
 	clear: both;
 	max-width: 960px;
 	margin: 2em auto;
