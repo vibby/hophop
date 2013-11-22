@@ -17,6 +17,7 @@ $lora-font-stack: "Lora", serif;
 
 @mixin oswald() {
   font-family: $oswald-font-stack;
+  font-weight: 300;
 }
 @mixin merriweather() {
   font-family: $merriweather-font-stack;
