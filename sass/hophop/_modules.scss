@@ -199,8 +199,6 @@ $float: 'float.png';
 
 /* mod-bullets */
 .mod-bullets {
-    width: 83%;
-    overflow: hidden;
     margin-bottom: 1.1em;
 
     header {
@@ -559,9 +557,11 @@ body > footer {
 }
 
 $heads: 'heads.jpg';
+
 [id="news-title"] {
     @include oswald;
     background: url('../img/heads.jpg') no-repeat 0 0;
+    background-size: 100%;
     padding-top: image-height( $heads );
     font-size: 5.125em;
     margin-bottom: 0;

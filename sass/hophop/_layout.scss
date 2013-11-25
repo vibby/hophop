@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 }
 
-#page{
+#page, {
 	max-width: 1280px;
 	margin: 0 auto;
 }
@@ -16,7 +16,7 @@
 	@extend .visuallyhidden;
 }
 
-main, #page>footer {
+main, body>footer {
 	clear: both;
 	max-width: 960px;
 	margin: 2em auto;
@@ -25,6 +25,8 @@ main, #page>footer {
 /* Responsive */
 
 $level1 : 1200px;
+$level2 : 880px;
+$level3 : 720px;
 
 @media screen and (min-width:$level1) {
 	.mod-header {
@@ -45,11 +47,13 @@ $level1 : 1200px;
 	}
 
 	.mod-box {
-			float: left;
-
+		float: left;
 		.mod-box-content {
 					max-width: 360px;
 		}
+	}
+	.mod-bullets {
+    width: 83%;
 	}
 
 }
@@ -57,26 +61,28 @@ $level1 : 1200px;
 @media screen and (max-width:$level1) {
 	.mod-header {
 		&:before, &>.mod-box:before {
-			right: 10%;
-		}
-		&:before {
-				width: 575px;
+			left: 0;
+			width: 545px;
 		}
 	}
 	.mod-box {
-			max-width: 90%;
+		max-width: 90%;
 		.mod-box-figure {
 				float: left;
 		}
-			.mod-box-figure{
-					img, &:before{
-							margin-top: -4em;
-							margin-left: 4em;
-					}
-				}
+		.mod-box-figure{
+			img, &:before{
+					margin-top: -4em;
+					margin-left: 4em;
+			}
+		}
 		.mod-box-content {
-					max-width: 80%;
-					text-align: left;
+			max-width: 80%;
+			text-align: left;
+			padding-left: 242px;
+		}
+		h2 {
+			padding-left: 4em;			
 		}
 	}
 
@@ -108,5 +114,23 @@ $level1 : 1200px;
 	body > footer {
 		margin: 2em .5em;
 	}
+	[id="news-title"] {
+    font-size: 3.3em;
+    padding-top: 130px;
+  }   
+
+}
+
+@media screen and (max-width:$level2) {
+	.mod-feature {
+		margin-top: 25em;
+	}
+	.subtitle time{
+		display: block;
+	}
+}
+
+@media screen and (max-width:$level3) {
+
 
 }
