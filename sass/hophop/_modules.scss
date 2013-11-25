@@ -60,7 +60,6 @@
     text-align: center;
     color: $color-gray-medium;
     max-width: 440px;
-    margin-top: -4.9em;
     margin-bottom: 3em;
     margin-left: 11%;
 
@@ -313,8 +312,6 @@ $float: 'float.png';
 .mod-bottom-aside {
     @include oswald;
     text-transform: uppercase;
-    float: right;
-    width: 225px;
     margin-top: .9em;
     color: #fff;
     opacity: .99;
@@ -326,6 +323,7 @@ $float: 'float.png';
         border: $color-frank-blue-darker dashed;
         background: $color-frank-blue;
         border-width: 2px 0;
+        width: 225px;
     }
     &>article:nth-child(2n) {
         border: $color-frank-blue-dark solid;
@@ -550,8 +548,6 @@ body > footer {
 
 .mod-bottom-aside + article {
   overflow: hidden;
-  padding-right: .75em;
-  margin-right: 15em;
   border-right: 1px solid #e5e5e5;
 }
 

@@ -13,7 +13,14 @@
 }
 
 #skiplink {
-	@extend .visuallyhidden;
+  clip: rect(0 0 0 0);
+  width:   1px;
+  height:  1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  border:  0;
+  position: absolute;
 }
 
 main, body>footer {
@@ -24,11 +31,13 @@ main, body>footer {
 
 /* Responsive */
 
-$level1 : 1200px;
-$level2 : 880px;
-$level3 : 680px;
+$limit1 : 1200px;
+$limit2 : 880px;
+$limit3 : 680px;
+$limit4 : 470px;
 
-@media screen and (min-width:$level1) {
+/* level 1 (over 1200) */
+@media screen and (min-width:$limit1) {
 	.mod-header {
 		& > .subtitle{
 			margin-right: 12.44%;			
@@ -65,7 +74,37 @@ $level3 : 680px;
 
 }
 
-@media screen and (max-width:$level1) {
+/* level 1 to 3 (over 680) */
+@media screen and (min-width:$limit3) {
+	.mod-box {
+		margin-top: -4.9em;
+	}
+	.mod-bottom-aside {
+    float: right;
+		& + article {
+  		margin-right: 15em;
+		  padding-right: .75em;
+  	}
+  }
+}
+
+
+/* level 2 and 3 (1200 < 680) */
+@media screen and (max-width:$limit1) and (min-width:$limit3) {
+	.mod-box {
+		h2 {
+			padding-left: 4em;			
+		}
+		.mod-box-content {
+			max-width: 80%;
+			text-align: left;
+			padding-left: 242px;
+		}		
+	}
+}
+
+/* level 2 to 5 (under 1200) */
+@media screen and (max-width:$limit1) {
 	.mod-header {
 		&:before, &>.mod-box:before {
 			left: 0;
@@ -79,6 +118,7 @@ $level3 : 680px;
 			bottom: 8%;
 		}
 	}
+	
 	.mod-box {
 		max-width: 90%;
 		.mod-box-figure {
@@ -86,17 +126,8 @@ $level3 : 680px;
 		}
 		.mod-box-figure{
 			img, &:before{
-					margin-top: -4em;
 					margin-left: 4em;
 			}
-		}
-		.mod-box-content {
-			max-width: 80%;
-			text-align: left;
-			padding-left: 242px;
-		}
-		h2 {
-			padding-left: 4em;			
 		}
 	}
 
@@ -131,7 +162,8 @@ $level3 : 680px;
 
 }
 
-@media screen and (max-width:$level2) {
+/* level 3 to 5 (under 880) */
+@media screen and (max-width:$limit2) {
 	[id="news-title"] {
 		font-size: 3em;
 		padding-top: 130px;
@@ -144,7 +176,58 @@ $level3 : 680px;
 	}
 }
 
-@media screen and (max-width:$level3) {
+/* level 4 and 5 (under 680) */
+@media screen and (max-width:$limit3) {
+	.mod-header {
+		& > .site-title {
+			font-size: 11em;
+		}
+		&:before, &>.mod-box:before {
+			width: 100%;
+		}
+	}
+	.mod-box {
+		.mod-box-figure {
+			float: none;
+			margin-top: -2em;
+		}
+	}
+	.mod-feature {
+    margin-top: 16em;
 
+		img {
+	    margin-top: -29em;
+	    max-width: 140%;
+	  }
+	}
+	.mod-bottom-aside {
+    margin: .9em auto;
+  }
+  .mod-bluray img {
+  	margin-top: -42px;
+  }
+  .mod-bullets header {
+    padding-right: 7.5rem;
+  }
+	.mod-bottom-aside {
+    & > article {
+    	float: right;
+		}
+		article + article{
+			margin-right: 3px;
+		}
+		& + article {
+			clear: right;
+  	}
+	}
+}
 
+/* level 5 only (under 470) */
+@media screen and (max-width:$limit4) {
+	.mod-bottom-aside {
+    & > article {
+    	width: 49%;
+			margin-right: 0;
+		}
+	}
 }
