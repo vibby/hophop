@@ -26,15 +26,22 @@ main, body>footer {
 
 $level1 : 1200px;
 $level2 : 880px;
-$level3 : 720px;
+$level3 : 680px;
 
 @media screen and (min-width:$level1) {
 	.mod-header {
 		& > .subtitle{
-				margin-right: 12.44%;			
+			margin-right: 12.44%;			
 		}
 		&:before, &>.mod-box:before {
-				right: 54.5%;
+			right: 54.5%;
+		}
+		&:before {
+			bottom: -5em;
+		}
+		&>.mod-box:before {
+			bottom: -5em;
+			top: 43.6em;
 		}
 	}
 	.mod-afloat {
@@ -53,7 +60,7 @@ $level3 : 720px;
 		}
 	}
 	.mod-bullets {
-    width: 83%;
+		width: 83%;
 	}
 
 }
@@ -63,6 +70,13 @@ $level3 : 720px;
 		&:before, &>.mod-box:before {
 			left: 0;
 			width: 545px;
+		}
+		&:before {
+			bottom: 21em;
+		}
+		&>.mod-box:before {
+			top:53%;
+			bottom: 8%;
 		}
 	}
 	.mod-box {
@@ -97,31 +111,31 @@ $level3 : 720px;
 	}
 
 	.mod-afloat {
-			padding-right: image-width( $float );
-			background-position: 100% 0;
-			position: relative;
-			&:after {
-				position: absolute;
-				top: 0;
-				right: 0;
-				height: image-height( $float );
-				width: image-width( $float );
-				background: url('../img/float.png') no-repeat;
-				content: "";
-			}
+		padding-right: image-width( $float );
+		background-position: 100% 0;
+		position: relative;
+		&:after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: image-height( $float );
+			width: image-width( $float );
+			background: url('../img/float.png') no-repeat;
+			content: "";
+		}
 	}
 
 	body > footer {
 		margin: 2em .5em;
 	}
-	[id="news-title"] {
-    font-size: 3.3em;
-    padding-top: 130px;
-  }   
 
 }
 
 @media screen and (max-width:$level2) {
+	[id="news-title"] {
+		font-size: 3em;
+		padding-top: 130px;
+	}
 	.mod-feature {
 		margin-top: 25em;
 	}
