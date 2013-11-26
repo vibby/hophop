@@ -318,12 +318,13 @@ $float: 'float.png';
 
   li + li { border-left: 1px solid; }
 
+  .bullet-type,
   .bullet-vendor {
     font-size:  .9em;
-    text-transform: uppercase;
+    display: block;
   }
 
-  .bullet-type { font-size:  .9em; }
+  .bullet-vendor { text-transform: uppercase; }
 
   li + li + li {
     & .bullet-vendor,
@@ -402,21 +403,6 @@ $float: 'float.png';
     border-top: 2px $color-frank-blue-darker dashed;
   }
 
-  .mod-bottom-aside-content {
-    @extend %lora;
-    text-transform: none;
-    font-size: 1.07em;
-    letter-spacing: -.045em;
-    margin-bottom: 1.3em;
-    line-height: 1.4em;
-  }
-
-  .progress-bar {
-    clear: both;
-    width: 95.5%;
-    margin: 7px 0 16px;
-  }
-
   &:hover > .mod-event {
     -webkit-transition: -webkit-transform .5s;
     transition:         transform .5s;
@@ -427,6 +413,22 @@ $float: 'float.png';
     -ms-transform-origin:     70% 5%;
     transform-origin:         70% 5%;
   }
+}
+
+.mod-bottom-aside-content {
+  @extend %lora;
+  text-transform: none;
+  font-size: 1.07em;
+  letter-spacing: -.045em;
+  margin-bottom: 0 !important;
+  padding-bottom: 1.3em;
+  line-height: 1.4em;
+}
+
+.progress-bar {
+  clear: both;
+  width: 95.5%;
+  margin: 7px 0 16px;
 }
 
 /* -- @subsection mod-bluray -------------------- */

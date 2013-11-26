@@ -20,6 +20,7 @@
 main,
 body > footer {
   clear: both;
+  display: block;
   max-width: 960px;
   margin: 2em auto;
 }
