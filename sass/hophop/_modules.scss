@@ -394,10 +394,12 @@ $float: 'float.png';
   h2 { margin: 0; }
 
   & > article {
-    border: $color-frank-blue-darker dashed;
     background: $color-frank-blue;
-    border-width: 2px 0;
     width: 225px;
+  }
+
+  & > article + article {
+    border-top: 2px $color-frank-blue-darker dashed;
   }
 
   .mod-bottom-aside-content {
@@ -480,7 +482,6 @@ $float: 'float.png';
 
 /* -- @subsection mod-event -------------------- */
 .mod-event {
-  border-bottom: 0 !important;
   padding: .75em .75em 2em;
   position: relative;
 
