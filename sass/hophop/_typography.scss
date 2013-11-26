@@ -10,40 +10,37 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather:900?text=GRoutergy%20);
 @import url(http://fonts.googleapis.com/css?family=Lora:400italic);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400|Merriweather:300,400|Lato:400);
-$oswald-font-stack: "Oswald", sans-serif;
-$merriweather-font-stack: "Merriweather", serif;
-$lato-font-stack: "Lato", sans-serif;
-$lora-font-stack: "Lora", serif;
 
-@mixin oswald() {
-  font-family: $oswald-font-stack;
+
+%oswald {
+  font-family: "Oswald", sans-serif;
   font-weight: 300;
 }
-@mixin merriweather() {
-  font-family: $merriweather-font-stack;
+%merriweather {
+  font-family: "Merriweather", serif;
 }
-@mixin merriweather-light() {
-  font-family: $merriweather-font-stack;
+%merriweather-light {
+  font-family: "Merriweather", serif;
   font-weight: 300;
 }
-@mixin merriweather-heavy() {
-  font-family: $merriweather-font-stack;
+%merriweather-heavy {
+  font-family: "Merriweather", serif;
   font-weight: 900;
 }
-@mixin lato() {
-  font-family: $lato-font-stack;
+%lato {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
-@mixin lato-hairline() {
-  font-family: $lato-font-stack;
+%lato-hairline {
+  font-family: "Lato", sans-serif;
   font-weight: 100;
 }
-@mixin lora() {
-  font-family: $lora-font-stack;
+%lora {
+  font-family: "Lora", serif;
   font-style: italic;
 }
-@mixin lora-bold() {
-  font-family: $lora-font-stack;
+%lora-bold {
+  font-family: "Lora", serif;
   font-weight: 700;
   font-style: italic;
 }

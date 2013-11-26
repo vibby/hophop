@@ -10,18 +10,12 @@ html, body {
 ul, ol {
   padding-left: 2em;
 
-  &.unstyled {
-    list-style: none;
-  }
+  &.unstyled { list-style: none; }
 }
 
-em {
-  font-style: italic;
-}
+em { font-style: italic; }
 
-strong {
-  font-weight: bold;
-}
+strong { font-weight: bold; }
 
 /**
  * Avoid top margins on first content element
@@ -29,9 +23,7 @@ strong {
 p, ul, ol dl,
 blockquote, pre,
 h1, h2, h3, h4, h5, h6 {
-  &:first-child {
-    margin-top: 0;
-  }
+  &:first-child { margin-top: 0; }
 }
 
 /**
@@ -47,9 +39,7 @@ li {
 /**
  * Prevents those to break out of their container
  */
-img, table, td, blockquote {
-  max-width: 100%;
-}
+img, table, td, blockquote { max-width: 100%; }
 
 /**
  * Pictures
@@ -69,6 +59,4 @@ img {
  * Hide script and style tags in case of table mode
  */
 body > script,
-body > style {
-  display: none !important;
-}
+body > style { display: none !important; }
