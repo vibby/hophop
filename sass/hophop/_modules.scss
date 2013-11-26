@@ -264,12 +264,44 @@ $float: 'float.png';
 
   figure {
     margin-top: 0;
+    position: relative;
+    height: 400px
   }
 
   figcaption {
-    -webkit-transform: translateY( -1.6em);
-    -ms-transform: translateY( -1.6em);
-    transform: translateY( -1.6em);
+    position: absolute;
+    bottom: 0;
+  }
+  figcaption:first-line {
+    font-size: 2.6em;
+  }
+  li:nth-child(3) {
+    figcaption:first-line {
+      font-size: 1.8em;
+    }
+  }
+
+  .bullet-vendor {
+    font-size:  .9em;
+    text-transform: uppercase;
+  }
+  li + li + li {
+    .bullet-vendor {
+      font-size: 1.2em;
+    }
+  }
+  .bullet-type {
+    font-size:  .9em;
+  }
+  li + li + li {
+    .bullet-type {
+      font-size: 1.2em;
+    }
+  }
+  li:last-child {
+    .bullet-type {
+      font-size: 1.2em;
+    }
   }
 
   li + li {
