@@ -1,95 +1,112 @@
-/*----------------------------*\
- * Print stylesheet           *
-\*----------------------------*/
+@charset "UTF-8";
+@media print {
+  /**
+  * @author Gaël Poupard
+  * @site Thème ffeeeedd
+  * @lastmodified 2013-06-26
+  * @subsection Références :
+  * @see KNACSS.com V1.1 @author : Raphael Goetter, Alsacreations
+  */
 
-@if $print-stylesheet {
-  @media print {
-    * {
-      background:  transparent !important;
-      box-shadow:  none        !important;
-      text-shadow: none        !important;
-    }
+  /* ----------------------------- */
+  /* ==Impression */
+  /* ----------------------------- */
 
-    body {
-      width:  auto             !important;
-      margin: auto             !important;
-      font-family: serif;
-      font-size: 12pt;
-      background-color: #fff   !important;
-      color: #000              !important;
-    }
+  /* Reset colors, background and shadows */
+  * {
+    background-color: #fff !important;
+    box-shadow: none !important;
+    color: #333 !important;
+    -ms-filter: none !important;
+    filter: none !important;
+    text-shadow: none !important;
+  }
 
-    h1,  h2,  h3, h4,  h5, h6,
-    p, blockquote,
-    ul, ol {
-      color: #000              !important;
-      margin: auto             !important;
-    }
+  /* Reset body and fixes font units in points */
+  body {
+    font-family: "Century Gothic", "Gill Sans", "Avant Garde", Avenir, sans-serif;
+    font-size: 12pt;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+  }
 
-    /**
-     * Displays possible .print elements
-     */
-    .print {
-      display: block;
-    }
+  .print-hidden {
+    display: none; /* Hide unwanted contents */
+  }
 
-    /**
-     * Try turning images to black and white if supported filters
-     */
-    img { 
-      @include prefix(filter, grayscale(100%));
-    }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  blockquote,
+  ul,
+  ol { margin: auto !important; }
 
-    /**
-     * 1. No orphans
-     * 2. No widows
-     */
-    p,
-    blockquote {
-      orphans: 3; /* 1 */
-      widows:  3; /* 2 */
-    }
+  .print {
+    display: block; /* Show desired contents */
+  }
 
-    /**
-     * Prevents breaks inside these elements
-     */
-    blockquote,
-    ul, ol {
-      page-break-inside: avoid;
-    }
+  .left,
+  .right {
+    display: block;
+    float: none; /* Line up everything */
+  }
 
-    /**
-     * Forces page break before main headers
-     */
-    h1 {
-      page-break-before: always;
-    }
+  [class*="mw"],
+  [class*="w9"],
+  [class*="w8"],
+  [class*="w7"],
+  [class*="w6"],
+  [class*="w5"],
+  [class*="w4"],
+  [class*="w3"],
+  [class*="w2"],
+  [class*="w1"] {
+    width: 100%; /* Everything is full-width */
+  }
 
-    /**
-     * Prevents breaks after these elements
-     */
-    h1, h2, h3,
-    caption {
-      page-break-after: avoid;
-    }
+  p,
+  blockquote {
+    orphans: 3; /* No orphans */
+    widows: 3; /* No widows */
+  }
 
-    /**
-     * 1. Displays url after link
-     * 2. ... unless it's a JS or empty link
-     */
-    a {
-      color: #000 !important;
-      text-decoration: underline !important;
-      
-      &[href]:after {
-        content: " (" attr(href) ")"; /* 1 */
-      }
+  blockquote,
+  ul,
+  ol {
+    page-break-inside: avoid; /* Avoid cutting those tags */
+  }
 
-      &[href^="javascript:"]:after,
-      &[href^="#"]:after,
-      &[href=""] {
-        content: ''; /* 2 */
-      }
-    }
+  h1 {
+    page-break-before: always; /* Another title, another page */
+  }
+
+  h1,
+  h2,
+  h3,
+  caption {
+    page-break-after: avoid; /* No cut after those tags */
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline !important;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ") "; /* Show URLs */
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript"]:after {
+    content: ''; /* Hide anchor target */
+  }
+
+  abbr[title]:after {
+    content: " ( " attr(title) " ) "; /* Show abbreviatinos' title */
   }
 }

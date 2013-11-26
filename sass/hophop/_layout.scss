@@ -1,5 +1,5 @@
 
-*, 
+*,
 *:after, /* 1 */
 *:before {
   -webkit-box-sizing: border-box;
@@ -29,8 +29,34 @@ main, body>footer {
   margin: 2em auto;
 }
 
-/* Responsive */
+/* ----------------------------- */
+/* ==viewport fixing for RWD     */
+/* ----------------------------- */
+@-webkit-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@-moz-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@-ms-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@-o-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
 
+
+/* ----------------------------- */
+/* ==RWD     */
+/* ----------------------------- */
 $limit1 : 1200px;
 $limit2 : 880px;
 $limit3 : 680px;
@@ -40,7 +66,7 @@ $limit4 : 470px;
 @media screen and (min-width:$limit1) {
   .mod-header {
     & > .subtitle{
-      margin-right: 12.66%;     
+      margin-right: 12.66%;
     }
     &:before, &>.mod-box:before {
       right: 54.5%;
@@ -70,6 +96,7 @@ $limit4 : 470px;
   }
   .mod-bullets {
     width: 83%;
+    float: right;
   }
 
 }
@@ -93,13 +120,13 @@ $limit4 : 470px;
 @media screen and (max-width:$limit1) and (min-width:$limit3) {
   .mod-box {
     h2 {
-      padding-left: 4em;      
+      padding-left: 4em;
     }
     .mod-box-content {
       max-width: 80%;
       text-align: left;
       padding-left: 242px;
-    }   
+    }
   }
 }
 
@@ -118,7 +145,7 @@ $limit4 : 470px;
       bottom: 8%;
     }
   }
-  
+
   .mod-box {
     max-width: 90%;
     .mod-box-figure {

@@ -587,6 +587,9 @@ $heads: 'heads.jpg';
     margin: 0;
     padding: .25em 0;
   }
+}
+[id="news-list"] {
+  padding-left: 0;
 
   li {
     @include merriweather-light;

@@ -32,6 +32,7 @@ $lora-font-stack: "Lora", serif;
 }
 @mixin lato() {
   font-family: $lato-font-stack;
+  font-weight: 400;
 }
 @mixin lato-hairline() {
   font-family: $lato-font-stack;
@@ -51,7 +52,7 @@ $lora-font-stack: "Lora", serif;
  * 1. Put the base font-size at 14px
  */
 body {
-  @include rem($base-font-size); /* 1 */
+  font-size: 1em; /* 1 */
   background: white;
 }
 

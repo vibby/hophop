@@ -9,21 +9,16 @@
 /**
  * 1. Enable support for old browsers (IE8-, Firefox 3.6)
  * 2. Enable print stylesheet
- * 3. Gutter value for grid layouts
- * 4. Base font size: must be unitless
- * 5. Font stacks
+ * 3. Base font size: must be unitless
+ * 4. Font stacks
  */
-$legacy-support-for-ie: true     !default; /* 1 */
-$legacy-support-for-mozilla: true   !default; /* 1 */
+$legacy-support-for-ie: true !default; /* 1 */
+$print-stylesheet: true !default; /* 2 */
 
-$print-stylesheet: false       !default; /* 2 */
-
-$gutter: 20px            !default; /* 3 */
-
-$base-font-size: 14         !default; /* 4 */
+$base-font-size: 14 !default; /* 3 */
 
 $regular-font-stack: "Lato", sans-serif;
-$monospace-font-stack: "Consolas", "DejaVu Sans Mono", "Courier", monospace; /* 5 */
+$monospace-font-stack: "Consolas", "DejaVu Sans Mono", "Courier", monospace; /* 4 */
 
 $color-gray-lighter : #C3B19A;
 $color-gray-light : #b0aeb8;
@@ -35,33 +30,15 @@ $color-bg2 : #cfcbde;
 $color-sand : #FDCD84;
 $color-taupe : #71625A;
 /* Colors replaced by opacity apply */
-/* $color-taupe-darker : #524741; */
 $color-frank-blue : #3A83BB;
 $color-frank-blue-dark : #3476A8;
 $color-frank-blue-darker : #234F70;
-/* Colors replaced by opacity apply */
-/* $color-frank-blue-light : #88AED1; */
-/* $color-frank-blue-lighter : #619CC9; */
 
-@import "helpers/mixins";          // Sass only
 @import "helpers/reset";           // Home made reset
-// @import "helpers/spacing-helpers"; // A couple of spacing-related helper classes
-// @import "helpers/layout-helpers";  // A couple of layout-related helper classes and Sass placeholder*/
-// @import "helpers/block-helpers";   // A couple of block-related helper classes
-
-// @import "modules/grids";           // Small grid system
-// @import "modules/tables";          // Tables
-// @import "modules/forms";           // Forms
-// @import "modules/icons";           // Icons (unicode based) and bullets
-// @import "modules/messages";        // Message system
-// @import "modules/layout";          // Layout
-// @import "modules/flexbox";         // Flexbox helpers
-// @import "modules/typography";      // Typography baseline and vertical rythm
 
 @import "partials/iefix";          // Some IE fixes
-// @import "partials/print";          // Print stylesheet
+@import "partials/print";          // Print stylesheet
 
 @import "hophop/typography";       // Typography baseline and vertical rythm
 @import "hophop/modules";          // Modules
 @import "hophop/layout";           // General layout
-@import "hophop/devtools";         // For dev and debug purpose
