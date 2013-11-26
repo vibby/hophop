@@ -1,24 +1,24 @@
-/**
- * www.KNACSS.com V2.9 @author: Raphael Goetter, Alsacreations
- * Licence CC-BY http://creativecommons.org/licenses/by/3.0/fr/
- *
- * Sass version maintained by @HugoGiraudel
- * https://github.com/HugoGiraudel/KNACSS-Sass
- */
+//
+// www.KNACSS.com V2.9 @author: Raphael Goetter, Alsacreations
+// Licence CC-BY http://creativecommons.org/licenses/by/3.0/fr/
+//
+// Sass version maintained by @HugoGiraudel
+// https://github.com/HugoGiraudel/KNACSS-Sass
+//
 
-/**
- * 1. Enable support for old browsers (IE8-, Firefox 3.6)
- * 2. Enable print stylesheet
- * 3. Base font size: must be unitless
- * 4. Font stacks
- */
-$legacy-support-for-ie: true !default; /* 1 */
-$print-stylesheet: true !default; /* 2 */
+//
+// 1. Enable support for old browsers (IE8-, Firefox 3.6)
+// 2. Enable print stylesheet
+// 3. Base font size: must be unitless
+// 4. Font stacks
+//
+$legacy-support-for-ie: true !default; // 1
+$print-stylesheet: true !default; // 2
 
-$base-font-size: 14 !default; /* 3 */
+$base-font-size: 14 !default; // 3
 
 $regular-font-stack: "Lato", sans-serif;
-$monospace-font-stack: "Consolas", "DejaVu Sans Mono", "Courier", monospace; /* 4 */
+$monospace-font-stack: "Consolas", "DejaVu Sans Mono", "Courier", monospace; // 4
 
 $color-gray-lighter : #C3B19A;
 $color-gray-light : #b0aeb8;
@@ -29,7 +29,7 @@ $color-bg2 : #cfcbde;
 
 $color-sand : #FDCD84;
 $color-taupe : #71625A;
-/* Colors replaced by opacity apply */
+// Colors replaced by opacity apply */
 $color-frank-blue : #3A83BB;
 $color-frank-blue-dark : #3476A8;
 $color-frank-blue-darker : #234F70;
